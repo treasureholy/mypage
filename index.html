@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            background-color: green;
+            color: white;
+
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .mytitle>button {
+            width: 250px;
+            height: 50px;
+
+            background-color: transparent;
+
+            border: 1px solid white;
+            color: white;
+
+            border-radius: 50px;
+
+            margin-top: 20px;
+        }
+
+        .mytitle>button:hover {
+            border: 2px solid white;
+        }
+
+        .mycomment {
+            color: gray;
+            font-size: x-small;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 20px auto 20px auto;
+
+        }
+
+        .mypost {
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+
+            box-shadow: 0px 0px 10px 0px gray;
+        }
+
+        .my-img {
+            height: 400px;
+        }
+
+        .mybtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .mybtn >button {
+            margin-right: 10px;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card-text {
+            text-align: center;
+        }
+
+        .card-star {
+            text-align: center;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>내 생애 최고의 영화들</h1>
+        <button>영화 기록하기</button>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화 url</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">코멘트</label>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+    </div>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxODExMTBfODkg%2FMDAxNTQxODIyOTM3MjA4.DG5my0GtQNotp-o2K6-jfLe0qo6slFtyzCAzbfpQ8vEg.vgqkoL282kQboBv0tTngmk-PQkFpedegp4nlCq35OU0g.PNG.resound_c%2FexternalFile.png&type=sc960_832"
+                        class="card-img-top my-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">스타 이즈 본</h5>
+                        <p class="card-text">브래들리쿠퍼, 레이디가가</p>
+                        <p class="card-star">⭐⭐⭐</p>
+                        <p class="mycomment">노래에 놀라운 재능을 가졌지만 외모에는 자신이 없는 무명가수 앨리(레이디 가가)는 공연을 하던 바에서 우연히 톱스타 잭슨 메인(브래들리 쿠퍼)을 만나게 된다. 자신의 모든 것을 사랑해주는 잭슨의 도움으로 앨리는 자기 안의 열정을 폭발시키며 최고의 스타로 거듭나지만, 잭슨은 어린 시절의 상처와 예술가적 고뇌 속에서 점점 무너져가는데…</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTA0MjJfNiAg%2FMDAxNTU1OTExNjcyNDg0.Vl52tHMz20tVZqxP8IZUC7Dd80pos53-l5bDSRBwvVIg.8vrCP3vIdiIuasP6qkstyxJyKLB5MLrciN7o-kkw9nQg.JPEG.muepark%2FScreenshot_20190422-144002.jpg&type=sc960_832"
+                        class="card-img-top my-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">어벤져스:엔드게임</h5>
+                        <p class="card-text">어벤져스 멤버</p>
+                        <p class="card-star">⭐⭐⭐</p>
+                        <p class="mycomment">인피니티 워 이후 절반만 살아남은 지구 마지막 희망이 된 어벤져스 먼저 떠난 그들을 위해 모든 것을 걸었다! 위대한 어벤져스 운명을 바꿀 최후의 전쟁이 펼쳐진다!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata19%2F2006%2F11%2F11%2F46%2Ftruman2-empire4001-empire4001.jpg&type=sc960_832"
+                        class="card-img-top my-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">트루먼 쇼</h5>
+                        <p class="card-text">짐 캐리</p>
+                        <p class="card-star">⭐⭐⭐</p>
+                        <p class="mycomment">작은 섬에서 평범한 삶을 사는 30세 보험회사원 트루먼 버뱅크 아내와 홀어머니를 모시고 행복한 하루 하루를 보내던 어느 날, 하늘에서 조명이 떨어진다! 의아해하던 트루먼은 길을 걷다 죽은 아버지를 만나고 라디오 주파수를 맞추다 자신의 일거수일투족이 라디오에 생중계되는 기이한 일들을 연이어 겪게 된다. 지난 30년간 일상이라고 믿었던 모든 것들이 어딘가 수상하다고 느낀 트루먼은 모든 것이 ‘쇼’라는 말을 남기고 떠난 첫사랑 ‘실비아’를 찾아 피지 섬으로 떠나기로 결심한다. 가족, 친구, 회사… 하나부터 열까지 모든 것이 가짜인 ‘트루먼 쇼’ 과연 트루먼은 진짜 인생을 찾을 수 있을까?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTNfMjA4%2FMDAxNjUyNDQ2ODQ4NTgz.bRa61Emqsy8BXvRXJpVfzsq2QIvZj0MrGf7TDH6wLqog.P7E5d-G_Uou830L_mntwth9FQDlULjgsp4pDl_fkl3og.JPEG.aline86%2F1652359938429.jpg&type=sc960_832"
+                        class="card-img-top my-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">쇼생크 탈출</h5>
+                        <p class="card-text">팀 로빈스, 모건 프리먼</p>
+                        <p class="card-star">⭐⭐⭐</p>
+                        <p class="mycomment">촉망 받던 은행 부지점장 앤디(팀 로빈슨)는 아내와 그 애인을 살해한 혐의로 종신형을 받고 쇼생크 교도소에 수감된다. 강력범들이 수감된 이곳에서 재소자들은 짐승 취급 당하고, 혹여 간수 눈에 잘못 보였다가는 개죽음 당하기 십상이다. 처음엔 적응 못하던 앤디는 교도소 내 모든 물건을 구해주는 레드(모건 프리먼)와 친해지며 교도소 생활에 적응하려 하지만, 악질 재소자에게 걸려 강간까지 당한다. 그러던 어느 날, 간수장의 세금 면제를 도와주며 간수들의 비공식 회계사로 일하게 되고, 마침내는 소장의 검은 돈까지 관리해주게 된다. 덕분에 교도소 내 도서관을 열 수 있게 되었을 무렵, 신참내기 토미(길 벨로우스)로부터 앤디의 무죄를 입증할 기회를 얻지만, 노튼 소장은 앤디를 독방에 가두고 ‘토미’를 무참히 죽여버리는데...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
